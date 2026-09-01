@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Account Deletion Request — Karachi Naseeb Biryani</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F7EEDD;
+    --paper-deep:#EFE2C8;
+    --ink:#241D14;
+    --ink-soft:#5B4E3B;
+    --maroon:#7A1E22;
+    --maroon-deep:#5A1417;
+    --saffron:#C4881F;
+    --olive:#535C34;
+    --rule:#D8C7A2;
+    --max-w:720px;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--paper);
+    background-image:radial-gradient(circle at 1px 1px, rgba(36,29,20,0.05) 1px, transparent 0);
+    background-size:22px 22px;
+    color:var(--ink);
+    font-family:'Inter', sans-serif;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--maroon);}
+  a:hover{color:var(--maroon-deep);}
+
+  .masthead{
+    background:var(--maroon);
+    color:var(--paper);
+    padding:64px 24px 46px;
+    text-align:center;
+    border-bottom:6px solid var(--saffron);
+  }
+  .kicker{
+    font-size:12.5px;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    color:#E7C98A;
+    margin:0 0 14px;
+    font-weight:600;
+  }
+  .masthead h1{
+    font-family:'Fraunces', serif;
+    font-weight:600;
+    font-size:clamp(32px, 6vw, 48px);
+    margin:0 0 12px;
+    letter-spacing:-0.01em;
+  }
+  .masthead p.sub{
+    max-width:520px;
+    margin:0 auto;
+    color:#EADFC4;
+    font-size:15.5px;
+  }
+  .ornament{
+    display:flex;align-items:center;justify-content:center;gap:10px;margin-top:22px;color:#E7C98A;
+  }
+  .ornament .diamond{width:6px;height:6px;background:#E7C98A;transform:rotate(45deg);}
+  .ornament .line{width:56px;height:1px;background:#E7C98A;opacity:.6;}
+
+  main{
+    max-width:var(--max-w);
+    margin:0 auto;
+    padding:56px 24px 100px;
+  }
+
+  .backlink{
+    display:inline-block;
+    font-size:13.5px;
+    color:var(--ink-soft);
+    text-decoration:none;
+    margin-bottom:30px;
+  }
+  .backlink:hover{color:var(--maroon);}
+
+  .intro p{font-size:15.5px;margin:0 0 14px;}
+
+  .card{
+    background:var(--paper-deep);
+    border:1px solid var(--rule);
+    border-radius:2px;
+    padding:30px 28px;
+    margin:34px 0;
+  }
+  .card h2{
+    font-family:'Fraunces', serif;
+    font-weight:600;
+    font-size:20px;
+    margin:0 0 18px;
+    color:var(--maroon-deep);
+  }
+
+  .steps{list-style:none;margin:0;padding:0;counter-reset:step;}
+  .steps li{
+    counter-increment:step;
+    display:flex;
+    gap:16px;
+    padding:16px 0;
+    border-bottom:1px solid var(--rule);
+  }
+  .steps li:last-child{border-bottom:none;}
+  .steps li::before{
+    content:counter(step);
+    flex:0 0 auto;
+    width:30px;height:30px;
+    border-radius:50%;
+    background:var(--maroon);
+    color:var(--paper);
+    font-family:'Fraunces', serif;
+    font-weight:600;
+    font-size:14px;
+    display:flex;align-items:center;justify-content:center;
+  }
+  .step-body h3{
+    margin:2px 0 4px;
+    font-size:15.5px;
+    font-weight:600;
+  }
+  .step-body p{
+    margin:0;
+    font-size:14.5px;
+    color:var(--ink-soft);
+  }
+  .step-body code{
+    background:var(--paper);
+    border:1px solid var(--rule);
+    padding:1px 6px;
+    border-radius:3px;
+    font-size:13.5px;
+  }
+
+  .field-group{margin-bottom:20px;}
+  .field-group label{
+    display:block;
+    font-size:13px;
+    font-weight:600;
+    color:var(--maroon-deep);
+    margin-bottom:6px;
+    letter-spacing:.01em;
+  }
+  .field-group input, .field-group textarea, .field-group select{
+    width:100%;
+    padding:11px 13px;
+    border:1px solid var(--rule);
+    border-radius:2px;
+    background:#FBF5E8;
+    font-family:'Inter', sans-serif;
+    font-size:14.5px;
+    color:var(--ink);
+  }
+  .field-group textarea{resize:vertical;min-height:90px;}
+  .field-group input:focus, .field-group textarea:focus, .field-group select:focus{
+    outline:2px solid var(--saffron);
+    outline-offset:1px;
+  }
+  .field-hint{font-size:12.5px;color:var(--ink-soft);margin-top:5px;}
+  .checkbox-row{
+    display:flex;
+    gap:10px;
+    align-items:flex-start;
+    font-size:13.5px;
+    color:var(--ink-soft);
+    margin-bottom:24px;
+  }
+  .checkbox-row input{margin-top:3px;}
+
+  .btn{
+    display:inline-block;
+    background:var(--saffron);
+    color:var(--maroon-deep);
+    text-decoration:none;
+    font-weight:700;
+    font-size:14.5px;
+    padding:14px 30px;
+    border-radius:2px;
+    border:none;
+    cursor:pointer;
+    letter-spacing:.01em;
+    width:100%;
+    text-align:center;
+  }
+  .btn:hover{background:#D9A03D;}
+
+  .direct-email{
+    text-align:center;
+    margin-top:14px;
+    font-size:13.5px;
+    color:var(--ink-soft);
+  }
+
+  table.retain{
+    width:100%;
+    border-collapse:collapse;
+    font-size:14px;
+    margin-top:4px;
+  }
+  table.retain th, table.retain td{
+    text-align:left;
+    padding:9px 10px;
+    border:1px solid var(--rule);
+  }
+  table.retain th{
+    background:var(--paper);
+    font-family:'Fraunces', serif;
+    font-weight:600;
+    color:var(--maroon-deep);
+  }
+
+  .timeline{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    font-size:13.5px;
+    color:var(--ink-soft);
+    margin-top:10px;
+  }
+  .timeline strong{color:var(--maroon-deep);}
+
+  footer{
+    text-align:center;
+    padding:34px 24px 50px;
+    font-size:13px;
+    color:var(--ink-soft);
+  }
+  footer .diamond-row{display:flex;justify-content:center;align-items:center;gap:8px;margin-bottom:14px;}
+  footer .diamond-row span{width:5px;height:5px;background:var(--saffron);transform:rotate(45deg);display:inline-block;}
+  footer .diamond-row i{width:40px;height:1px;background:var(--rule);display:inline-block;}
+</style>
+</head>
+<body>
+
+<div class="masthead">
+  <p class="kicker">Karachi Naseeb Biryani</p>
+  <h1>Delete Your Account</h1>
+  <p class="sub">Request permanent deletion of your account and personal data. No login needed — just send us the request below.</p>
+  <div class="ornament"><i class="line"></i><span class="diamond"></span><i class="line"></i></div>
+</div>
+
+<main>
+
+  <a class="backlink" href="privacy-policy.html">← Back to Privacy Policy</a>
+
+  <div class="intro">
+    <p>If you'd like to stop using Karachi Naseeb Biryani and have your account and personal data permanently removed, you can request this at any time. Once we verify your request, we'll delete your account details, saved addresses, and profile information from our systems.</p>
+  </div>
+
+  <div class="card">
+    <h2>How to request deletion</h2>
+    <ol class="steps">
+      <li>
+        <div class="step-body">
+          <h3>Fill in the form below</h3>
+          <p>Enter the phone number or email you used to sign up, so we can locate your account.</p>
+        </div>
+      </li>
+      <li>
+        <div class="step-body">
+          <h3>Send the request</h3>
+          <p>Tapping "Send deletion request" opens your email app with a pre-filled message addressed to <code>taxdoctorspk@gmail.com</code>. Just hit send.</p>
+        </div>
+      </li>
+      <li>
+        <div class="step-body">
+          <h3>We verify it's you</h3>
+          <p>We may reply to confirm the request matches the account on file, to prevent someone else from deleting your account.</p>
+        </div>
+      </li>
+      <li>
+        <div class="step-body">
+          <h3>Your data is deleted</h3>
+          <p>We process the request and confirm by email once it's complete — typically within <strong>7 business days</strong>.</p>
+        </div>
+      </li>
+    </ol>
+  </div>
+
+  <div class="card">
+    <h2>Request form</h2>
+    <form action="mailto:taxdoctorspk@gmail.com" method="get" enctype="text/plain">
+      <div class="field-group">
+        <label for="name">Full name</label>
+        <input type="text" id="name" name="Name" placeholder="As registered on the app" required>
+      </div>
+      <div class="field-group">
+        <label for="contact">Registered phone number or email</label>
+        <input type="text" id="contact" name="Registered contact" placeholder="e.g. 03xx-xxxxxxx or your email" required>
+        <p class="field-hint">This helps us find your account — it won't be used for anything else.</p>
+      </div>
+      <div class="field-group">
+        <label for="reason">Reason (optional)</label>
+        <textarea id="reason" name="Reason" placeholder="Tell us why you're leaving — totally optional, but it helps us improve."></textarea>
+      </div>
+      <div class="checkbox-row">
+        <input type="checkbox" id="confirm" required>
+        <label for="confirm">I understand this will permanently delete my account, order history, and saved addresses, and this action cannot be undone.</label>
+      </div>
+      <button type="submit" class="btn">Send deletion request →</button>
+    </form>
+    <p class="direct-email">Prefer to write directly? Email <a href="mailto:taxdoctorspk@gmail.com?subject=Account%20Deletion%20Request">taxdoctorspk@gmail.com</a></p>
+  </div>
+
+  <div class="card">
+    <h2>What gets deleted — and what we keep</h2>
+    <table class="retain">
+      <thead>
+        <tr><th>Data</th><th>Outcome</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Name, phone number, email, password</td><td>Permanently deleted</td></tr>
+        <tr><td>Saved delivery addresses</td><td>Permanently deleted</td></tr>
+        <tr><td>Favourites &amp; saved preferences</td><td>Permanently deleted</td></tr>
+        <tr><td>Notification history</td><td>Permanently deleted</td></tr>
+        <tr><td>Past order records</td><td>Retained only where required for accounting, tax, or legal purposes, then deleted</td></tr>
+      </tbody>
+    </table>
+    <div class="timeline"><strong>Processing time:</strong> up to 7 business days from verification.</div>
+  </div>
+
+</main>
+
+<footer>
+  <div class="diamond-row"><i></i><span></span><i></i></div>
+  Karachi Naseeb Biryani · Account Deletion Request · <a href="mailto:taxdoctorspk@gmail.com">taxdoctorspk@gmail.com</a>
+</footer>
+
+</body>
+</html>

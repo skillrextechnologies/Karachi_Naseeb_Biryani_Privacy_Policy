@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Karachi Naseeb Biryani</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F7EEDD;
+    --paper-deep:#EFE2C8;
+    --ink:#241D14;
+    --ink-soft:#5B4E3B;
+    --maroon:#7A1E22;
+    --maroon-deep:#5A1417;
+    --saffron:#C4881F;
+    --olive:#535C34;
+    --rule:#D8C7A2;
+    --max-w:760px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--paper);
+    background-image:
+      radial-gradient(circle at 1px 1px, rgba(36,29,20,0.05) 1px, transparent 0);
+    background-size: 22px 22px;
+    color:var(--ink);
+    font-family:'Inter', sans-serif;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--maroon);}
+  a:hover{color:var(--maroon-deep);}
+
+  .masthead{
+    background:var(--maroon);
+    color:var(--paper);
+    padding:64px 24px 46px;
+    text-align:center;
+    position:relative;
+    border-bottom:6px solid var(--saffron);
+  }
+  .masthead::after{
+    content:"";
+    position:absolute;
+    left:0; right:0; bottom:-6px;
+    height:0;
+  }
+  .kicker{
+    font-size:12.5px;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    color:#E7C98A;
+    margin:0 0 14px;
+    font-weight:600;
+  }
+  .masthead h1{
+    font-family:'Fraunces', serif;
+    font-weight:600;
+    font-size:clamp(34px, 6vw, 52px);
+    margin:0 0 12px;
+    letter-spacing:-0.01em;
+  }
+  .masthead p.sub{
+    max-width:520px;
+    margin:0 auto;
+    color:#EADFC4;
+    font-size:15.5px;
+  }
+  .ornament{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    margin-top:22px;
+    color:#E7C98A;
+  }
+  .ornament .diamond{width:6px;height:6px;background:#E7C98A;transform:rotate(45deg);}
+  .ornament .line{width:56px;height:1px;background:#E7C98A;opacity:.6;}
+
+  main{
+    max-width:var(--max-w);
+    margin:0 auto;
+    padding:56px 24px 100px;
+  }
+
+  .meta-row{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px 22px;
+    font-size:13.5px;
+    color:var(--ink-soft);
+    border-bottom:1px solid var(--rule);
+    padding-bottom:22px;
+    margin-bottom:36px;
+  }
+  .meta-row strong{color:var(--ink);}
+
+  nav.toc{
+    background:var(--paper-deep);
+    border:1px solid var(--rule);
+    border-radius:2px;
+    padding:22px 24px;
+    margin-bottom:48px;
+  }
+  nav.toc h2{
+    font-family:'Fraunces', serif;
+    font-size:16px;
+    font-weight:600;
+    margin:0 0 12px;
+    color:var(--maroon-deep);
+  }
+  nav.toc ol{
+    margin:0;
+    padding-left:20px;
+    columns:2;
+    -webkit-columns:2;
+    column-gap:24px;
+    font-size:14px;
+  }
+  nav.toc li{margin-bottom:6px;break-inside:avoid;}
+  nav.toc a{text-decoration:none;color:var(--ink-soft);}
+  nav.toc a:hover{color:var(--maroon);}
+
+  section.clause{
+    margin-bottom:44px;
+    scroll-margin-top:24px;
+  }
+  section.clause .num{
+    font-family:'Fraunces', serif;
+    font-size:13px;
+    color:var(--saffron);
+    letter-spacing:.08em;
+    font-weight:600;
+    display:block;
+    margin-bottom:6px;
+  }
+  section.clause h2{
+    font-family:'Fraunces', serif;
+    font-weight:600;
+    font-size:24px;
+    margin:0 0 14px;
+    color:var(--maroon-deep);
+    border-bottom:2px solid var(--rule);
+    padding-bottom:10px;
+  }
+  section.clause p{
+    margin:0 0 14px;
+    font-size:15.5px;
+    color:var(--ink);
+  }
+  section.clause ul{
+    margin:0 0 14px;
+    padding-left:20px;
+  }
+  section.clause li{
+    margin-bottom:8px;
+    font-size:15.5px;
+  }
+  .data-table{
+    width:100%;
+    border-collapse:collapse;
+    margin:0 0 14px;
+    font-size:14.5px;
+  }
+  .data-table th, .data-table td{
+    text-align:left;
+    padding:10px 12px;
+    border:1px solid var(--rule);
+    vertical-align:top;
+  }
+  .data-table th{
+    background:var(--paper-deep);
+    font-family:'Fraunces', serif;
+    font-weight:600;
+    color:var(--maroon-deep);
+  }
+  .data-table tr:nth-child(even) td{background:#FBF5E8;}
+
+  .callout{
+    background:#F1E7CE;
+    border-left:4px solid var(--olive);
+    padding:16px 18px;
+    font-size:14.5px;
+    color:var(--ink-soft);
+    margin:0 0 14px;
+  }
+  .callout strong{color:var(--ink);}
+
+  .cta-box{
+    background:var(--maroon);
+    color:var(--paper);
+    padding:34px 30px;
+    text-align:center;
+    border-radius:2px;
+    margin-top:60px;
+  }
+  .cta-box h3{
+    font-family:'Fraunces', serif;
+    font-size:22px;
+    margin:0 0 8px;
+  }
+  .cta-box p{
+    color:#EADFC4;
+    font-size:14.5px;
+    margin:0 0 20px;
+  }
+  .btn{
+    display:inline-block;
+    background:var(--saffron);
+    color:var(--maroon-deep);
+    text-decoration:none;
+    font-weight:700;
+    font-size:14px;
+    padding:13px 28px;
+    border-radius:2px;
+    letter-spacing:.01em;
+  }
+  .btn:hover{background:#D9A03D; color:var(--maroon-deep);}
+
+  footer{
+    text-align:center;
+    padding:34px 24px 50px;
+    font-size:13px;
+    color:var(--ink-soft);
+  }
+  footer .diamond-row{
+    display:flex;justify-content:center;align-items:center;gap:8px;margin-bottom:14px;
+  }
+  footer .diamond-row span{width:5px;height:5px;background:var(--saffron);transform:rotate(45deg);display:inline-block;}
+  footer .diamond-row i{width:40px;height:1px;background:var(--rule);display:inline-block;}
+
+  @media (max-width:560px){
+    nav.toc ol{columns:1;}
+    .masthead{padding:48px 20px 36px;}
+  }
+</style>
+</head>
+<body>
+
+<div class="masthead">
+  <p class="kicker">Karachi Naseeb Biryani</p>
+  <h1>Privacy Policy</h1>
+  <p class="sub">How we handle your information when you order from us — in plain language, cover to cover.</p>
+  <div class="ornament"><i class="line"></i><span class="diamond"></span><i class="line"></i></div>
+</div>
+
+<main>
+
+  <div class="meta-row">
+    <span><strong>Effective date:</strong> 1 September 2026</span>
+    <span><strong>Applies to:</strong> Karachi Naseeb Biryani mobile app (iOS &amp; Android)</span>
+    <span><strong>Contact:</strong> <a href="mailto:taxdoctorspk@gmail.com">taxdoctorspk@gmail.com</a></span>
+  </div>
+
+  <nav class="toc" aria-label="Table of contents">
+    <h2>On this page</h2>
+    <ol>
+      <li><a href="#intro">Introduction</a></li>
+      <li><a href="#info-we-collect">Information we collect</a></li>
+      <li><a href="#how-we-use">How we use your information</a></li>
+      <li><a href="#location">Location data</a></li>
+      <li><a href="#sharing">How we share information</a></li>
+      <li><a href="#storage">Data storage &amp; retention</a></li>
+      <li><a href="#security">Security</a></li>
+      <li><a href="#your-rights">Your rights &amp; choices</a></li>
+      <li><a href="#deletion">Account &amp; data deletion</a></li>
+      <li><a href="#children">Children's privacy</a></li>
+      <li><a href="#changes">Changes to this policy</a></li>
+      <li><a href="#contact">Contact us</a></li>
+    </ol>
+  </nav>
+
+  <section class="clause" id="intro">
+    <span class="num">§ 01</span>
+    <h2>Introduction</h2>
+    <p>Karachi Naseeb Biryani ("we", "us", "our") operates the Karachi Naseeb Biryani mobile application (the "App"), which lets you browse our menu, place orders for delivery or pickup, save addresses, and track your order status.</p>
+    <p>This Privacy Policy explains what information we collect through the App, why we collect it, how it's used and shared, and the choices you have — including how to request deletion of your account and data. By using the App, you agree to the collection and use of information as described here.</p>
+  </section>
+
+  <section class="clause" id="info-we-collect">
+    <span class="num">§ 02</span>
+    <h2>Information we collect</h2>
+    <p>We collect information you give us directly, information generated as you use the App, and information from your device. Here's a breakdown:</p>
+    <table class="data-table">
+      <thead>
+        <tr><th>Category</th><th>Examples</th><th>Why we need it</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Account details</td>
+          <td>Name, phone number, email address, password (stored in encrypted/hashed form), OTP verification data</td>
+          <td>To create and secure your account, and let you sign in</td>
+        </tr>
+        <tr>
+          <td>Delivery addresses</td>
+          <td>Saved addresses, delivery instructions, nearby landmark, address label</td>
+          <td>To deliver your order to the right place</td>
+        </tr>
+        <tr>
+          <td>Order information</td>
+          <td>Items ordered, order value, order type (delivery/pickup), branch selected, order history and status</td>
+          <td>To process, prepare, and let you track your order</td>
+        </tr>
+        <tr>
+          <td>Location data</td>
+          <td>Precise or approximate device location (with your permission)</td>
+          <td>To find your nearest branch, estimate delivery distance/time, and help you pin your delivery address on the map</td>
+        </tr>
+        <tr>
+          <td>App activity</td>
+          <td>Favourites, cart contents, search queries, notification preferences and history</td>
+          <td>To personalise your experience and keep you updated on orders and offers</td>
+        </tr>
+        <tr>
+          <td>Device &amp; technical data</td>
+          <td>Device type, operating system, app version, general diagnostic/crash information</td>
+          <td>To keep the App working reliably and to troubleshoot issues</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="callout"><strong>What we don't collect:</strong> The App does not process card payments directly within the App; where online payment is offered, it is handled by the relevant payment method at the point of delivery/collection or via a separate, secure payment channel. We do not knowingly collect sensitive categories of personal data (such as health or biometric data).</div>
+  </section>
+
+  <section class="clause" id="how-we-use">
+    <span class="num">§ 03</span>
+    <h2>How we use your information</h2>
+    <ul>
+      <li>To create and manage your account, and verify your identity via OTP.</li>
+      <li>To take, prepare, and fulfil your orders, including coordinating delivery or pickup.</li>
+      <li>To calculate delivery fees, estimated delivery times, and to route your order to the nearest or selected branch.</li>
+      <li>To send order updates, delivery notifications, and — where you've opted in — promotional offers.</li>
+      <li>To maintain your order history, saved addresses, and favourites for a faster experience next time.</li>
+      <li>To respond to your questions and support requests.</li>
+      <li>To detect, prevent, and address fraud, abuse, or technical issues.</li>
+      <li>To improve the App's performance, menu offerings, and overall service quality.</li>
+    </ul>
+  </section>
+
+  <section class="clause" id="location">
+    <span class="num">§ 04</span>
+    <h2>Location data</h2>
+    <p>The App requests access to your device's location so it can suggest the nearest branch, calculate delivery distance and fees, and help you accurately place a pin when adding or editing a delivery address. Location access is requested at the time it's needed, and you can allow or deny it through your device's permission settings at any time.</p>
+    <p>If you deny location access, you can still use the App by entering or selecting your address manually, though some convenience features (like auto-detecting your nearest branch) may not be available.</p>
+  </section>
+
+  <section class="clause" id="sharing">
+    <span class="num">§ 05</span>
+    <h2>How we share information</h2>
+    <p>We do not sell your personal information. We share information only in the following circumstances:</p>
+    <ul>
+      <li><strong>With our branches and delivery staff</strong> — to prepare and deliver your order, we share the relevant order details, delivery address, and contact number with the branch fulfilling it and the rider assigned to it.</li>
+      <li><strong>With service providers</strong> — such as mapping providers (to display maps and calculate routes/distance) and hosting/infrastructure providers who store data on our behalf, under confidentiality obligations.</li>
+      <li><strong>For legal reasons</strong> — if required by law, regulation, legal process, or governmental request, or to protect the rights, property, or safety of our customers, staff, or the public.</li>
+      <li><strong>Business transfers</strong> — if we're involved in a merger, acquisition, or sale of assets, your information may be transferred as part of that transaction, subject to this Policy.</li>
+    </ul>
+  </section>
+
+  <section class="clause" id="storage">
+    <span class="num">§ 06</span>
+    <h2>Data storage &amp; retention</h2>
+    <p>Some information (such as your cart, favourites, and session details) is stored locally on your device to make the App responsive and to work smoothly between sessions. Account, order, and address information is stored on our servers.</p>
+    <p>We keep your information for as long as your account is active or as needed to provide you the service, comply with our legal and tax obligations, resolve disputes, and enforce our agreements. Order records may be retained for a longer period where required for accounting, tax, or regulatory purposes, even after account deletion.</p>
+  </section>
+
+  <section class="clause" id="security">
+    <span class="num">§ 07</span>
+    <h2>Security</h2>
+    <p>We use reasonable technical and organisational measures — such as encrypted connections, access controls, and secure storage practices — to protect your information from unauthorised access, alteration, disclosure, or destruction. However, no method of transmission or storage is 100% secure, and we cannot guarantee absolute security.</p>
+  </section>
+
+  <section class="clause" id="your-rights">
+    <span class="num">§ 08</span>
+    <h2>Your rights &amp; choices</h2>
+    <ul>
+      <li><strong>Access &amp; correction</strong> — you can review and update your profile, addresses, and preferences directly within the App's Profile section.</li>
+      <li><strong>Notification preferences</strong> — you can manage promotional and order notifications from within the App's settings or your device's notification settings.</li>
+      <li><strong>Location permission</strong> — you can turn location access on or off at any time via your device settings.</li>
+      <li><strong>Deletion</strong> — you can request deletion of your account and associated data at any time (see next section).</li>
+    </ul>
+  </section>
+
+  <section class="clause" id="deletion">
+    <span class="num">§ 09</span>
+    <h2>Account &amp; data deletion</h2>
+    <p>You have the right to request that we delete your account and the personal data associated with it. We've set up a dedicated page with step-by-step instructions and a ready-to-send request email.</p>
+    <a class="btn" href="account-deletion.html">Go to account deletion request →</a>
+  </section>
+
+  <section class="clause" id="children">
+    <span class="num">§ 10</span>
+    <h2>Children's privacy</h2>
+    <p>The App is not directed at children, and we do not knowingly collect personal information from children. If you believe a child has provided us with personal information, please contact us and we will take steps to delete it.</p>
+  </section>
+
+  <section class="clause" id="changes">
+    <span class="num">§ 11</span>
+    <h2>Changes to this policy</h2>
+    <p>We may update this Privacy Policy from time to time to reflect changes in our practices or for legal, operational, or regulatory reasons. We'll update the "Effective date" above when we do, and where changes are significant, we'll aim to give you reasonable notice through the App.</p>
+  </section>
+
+  <section class="clause" id="contact">
+    <span class="num">§ 12</span>
+    <h2>Contact us</h2>
+    <p>If you have questions, concerns, or requests regarding this Privacy Policy or your personal data, reach us at:</p>
+    <p><a href="mailto:taxdoctorspk@gmail.com">taxdoctorspk@gmail.com</a></p>
+  </section>
+
+  <div class="cta-box">
+    <h3>Want to delete your account?</h3>
+    <p>Submit a request in a couple of minutes — no login required.</p>
+    <a class="btn" href="account-deletion.html">Request account deletion</a>
+  </div>
+
+</main>
+
+<footer>
+  <div class="diamond-row"><i></i><span></span><i></i></div>
+  Karachi Naseeb Biryani · Privacy Policy
+</footer>
+
+</body>
+</html>
